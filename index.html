@@ -1,248 +1,315 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>python学習前に知っておいた方が良い事 10選</title>
+    <title>python学習前に知っておいた方が良い事 10選</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/custom.css">
-		<link rel="stylesheet" href="dist/style.css">
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<div class="topLogo"><img src="dist/ACube.png" width="75px"></div>
-				<section data-visibility="hidden"> <!-- Reveal & font-awesome hidden→ data-visibility="hidden" -->
-					<h2><a href="https://revealjs.com/" target="_blank">reveal.js doc</a></h2>
-					<h2><a href="https://fontawesome.com/search" target="_blank">font-awesom icon</a></h2>
-					<hr><br>
-					<div class="wrapper3">
-						<div>
-							<i class="fa-solid fa-location-dot icon"></i>
-							<p>fa-solid fa-location-dot</p>
-						</div>
-						<div>
-							<i class="fa-solid fa-user icon"></i>
-							<p>fa-solid fa-user</p>
-						</div>
-						<div>
-							<i class="fa-solid fa-file icon"></i>
-							<p>fa-solid fa-file</p>
-						</div>
-						<div>
-							<i class="fa-solid fa-bars icon"></i>
-							<p>fa-solid fa-bars</p>
-						</div>
-						<div>
-							<i class="fa-solid fa-map icon"></i>
-							<p>fa-solid fa-map</p>
-						</div>
-						<div>
-							<i class="fa-solid fa-map-location-dot icon"></i>
-							<p>fa-solid fa-map-location-dot</p>
-						</div>
-					</div>
-				</section>
-				<section> <!-- タイトル -->
-					<p>edaJuke(江田塾)</p>
-					<h1>python学習前に<br>知っておいた方が良い事 10選</h1>
-					<hr><br>
-					<ul>
-						<li>江田がプログラミング学習を進める上で先に知っておけば良かったと思った事を厳選</li>
-					</ul>
-					<p>by Occupier Advisory | Hirotaka Eda</p>
-				</section>
-				<section> <!-- 拡張子 -->
-					<section>
-						<p>python学習前に知っておいた方が良い事 10選</p>
-						<h1>1. 「拡張子」について知っておこう！</h1>
-						<hr><br>
-						<ul>
-							<li>拡張子 : Filename Extension</li>
-							<li>拡張子＝ファイル形式</li>
-						</ul>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 1.拡張子</p>
-						<h1>ファイルの種類</h1>
-						<hr><br>
-						<div class="wrapper3">
-							<div>
-								<i class="fa-solid fa-table icon"></i>
-								<p>.csv .json .txt</p>
-								<p>データファイル</p>
-							</div>
-							<div>
-								<i class="fa-brands fa-windows icon"></i>
-								<p>.docx .xlsx .pptx</p>
-								<p>Microsoft APPファイル</p>
-							</div>
-							<div>
-								<i class="fa-solid fa-file-zipper icon"></i>
-								<p>.zip </p>
-								<p>圧縮ファイル</p>
-							</div>
-							<div>
-								<i class="fa-solid fa-image icon"></i>
-								<p>.png .jpg .gif</p>
-								<p>画像ファイル</p>
-							</div>
-							<div>
-								<i class="fa-solid fa-file-audio icon"></i>
-								<p>.mp3 .mp4</p>
-								<p>音楽・動画ファイル</p>
-							</div>
-							<div>
-								<i class="fa-brands fa-python icon"></i>
-								<p>.py .ipynb</p>
-								<p>python系ファイル</p>
-							</div>
-						</div>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 1.拡張子</p>
-						<h1>ポイント</h1>
-						<hr><br>
-						<ul>
-							<li>拡張子はPC/Appがファイルの種類を識別するためにファイルの名前の末尾につけられる文字列</li>
-							<li>「末尾につけられる文字列」は「. (ドット) +英数字3〜4文字」</li>
-							<ul>
-								<li style="font-size: 1.5rem">PCでは拡張子が大文字(.CSV)でも動作するが別物として区別される環境もあるので小文字で統一するのがベスト</li>
-							</ul>
-							<li>ファイル名はなるべく日本語ではなく半角英数字にする</li>
-							<li>ファイル名は記号を使わない</li>
-							<ul>
-								<li style="font-size: 1.5rem">文字を区切りたい時は「_ (アンダーバー, アンダースコア)」を使おう</li>
-								<li style="font-size: 1.5rem">「- (ハイフン, マイナス)」も極力避けた方が良い</li>
-							</ul>
-							<li>プログラミングでは普段使わない拡張子を多く使うようになる</li>
-							<ul>
-								<li style="font-size: 1.5rem">知らない拡張子が出てきたらどんな種類の拡張子が調べてみよう</li>
-							</ul>
-						</ul>
-					</section>
-				</section>
-				<section> <!-- 命名規則 -->
-					<section>
-						<p>python学習前に知っておいた方が良い事 10選</p>
-						<h1>2. 「命名規則」を統一しよう！</h1>
-						<hr><br>
-						<ul>
-							<li>命名規則 : Naming Conventions</li>
-							<li>命名規則＝ネーミング規則, ネーミング規約</li>
-						</ul>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 2.命名規則</p>
-						<h1>ポイント</h1>
-						<hr><br>
-						<ul>
-							<li>ファイル名・識別子, カラム名, 変数名, 関数名, 等</li>
-							<ul>
-								<li style="font-size: 1.5rem;">基本的に日本語は利用しない</li>
-							</ul>
-							<li>プログラミングを行う際には自由に名前を決める事が出来るものが多くある</li>
-							<li>適当に名前をつけてしまうデメリット</li>
-							<ul>
-								<li style="font-size: 1.5rem;">自分も他人もコードが読み辛い</li>
-								<li style="font-size: 1.5rem;">リファクタリング(コードの整理)が難しくなる</li>
-								<li style="font-size: 1.5rem;">同じ名前を使ってしまいバグる</li>
-							</ul>
-						</ul>
-						<p></p>
-						<h3>規則性を持たせてなるべく統一する！</h3>
-						<h3>はじめは他の人のマネをしてみよう！</h3>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 2.命名規則</p>
-						<h1>代表的な命名規則</h1>
-						<hr><br>
-						<div class="wrapper3">
-							<div>
-								<h3>snake case</h3>
-								<p>sample_test_data.csv</p>
-							</div>
-							<div>
-								<h3>camel case</h3>
-								<p>sampleTestData.csv</p>
-							</div>
-							<div>
-								<h3>kebab case</h3>
-								<p>sample-test-data.csv</p>
-							</div>
-							<div>
-								<h3>screaming snake case</h3>
-								<p>SAMPLE_TEST_DATA.csv</p>
-							</div>
-							<div>
-								<h3>upper camel case (pascal case)</h3>
-								<p>SampleTestData.csv</p>
-							</div>
-							<div>
-								<h3>train case</h3>
-								<p>Sample-Test-Data.csv</p>
-							</div>
-						</div>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 2.命名規則</p>
-						<h1>python</h1>
-						<hr><br>
-						<div class="wrapper2">
-							<div>
-								<img src="./dist/pythonLogo.png" alt="pythonLogo" width="200px">
-								<p>python →</p>
-							</div>
-							<div>
-								<i class="fa-solid fa-staff-snake icon" style="font-size: 15rem;"></i>
-								<p>snake caseを使っている人が多い</p>
-							</div>
-						</div>
-					</section>
-				</section>
-				<section> <!-- ルート ディレクトリー パス -->
-					<section>
-						<p>python学習前に知っておいた方が良い事 10選</p>
-						<h1 style="font-size: 3.3em;">3. 「ディレクトリー, パス」を知っておこう！</h1>
-						<hr><br>
-						<ul>
-							<li>ディレクトリー : Directory</li>
-							<li>パス : Path</li>
-							<li>ルート : Route</li>
-						</ul>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 3.ディレクトリー・パス</p>
-						<h1>ディレクトリー・パスとは</h1>
-						<hr><br>
-						<div class="wrapper2">
-							<div>
-								<i class="fa-solid fa-folder icon"></i>
-								<p></p>
-								<h3>ディレクトリー Directory</h3>
-								<p>フォルダ</p>
-							</div>
-							<div>
-								<i class="fa-solid fa-folder-tree icon"></i>
-								<p></p>
-								<h3>パス Path</h3>
-								<p>フォルダ・ファイルまでの経路</p>
-							</div>
-						</div>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 3.ディレクトリー・パス</p>
-						<h1>絶対パス</h1>
-						<hr><br>
-						<h3>絶対パス : あるファイルやディレクトリーの場所を表す方法として、ファイルシステムのルート（先頭のディレクトリー）から辿って表記したパスのこと</h3>
-						<div class="wrapper2">
-							<div>
-								<pre><code data-trim data-noescape>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/custom.css" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <div class="topLogo"><img src="dist/ACube.png" width="75px" /></div>
+        <section data-visibility="hidden">
+          <!-- Reveal & font-awesome hidden→ data-visibility="hidden" -->
+          <h2>
+            <a href="https://revealjs.com/" target="_blank">reveal.js doc</a>
+          </h2>
+          <h2>
+            <a href="https://fontawesome.com/search" target="_blank"
+              >font-awesom icon</a
+            >
+          </h2>
+          <hr />
+          <br />
+          <div class="wrapper3">
+            <div>
+              <i class="fa-solid fa-location-dot icon"></i>
+              <p>fa-solid fa-location-dot</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-user icon"></i>
+              <p>fa-solid fa-user</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-file icon"></i>
+              <p>fa-solid fa-file</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-bars icon"></i>
+              <p>fa-solid fa-bars</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-map icon"></i>
+              <p>fa-solid fa-map</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-map-location-dot icon"></i>
+              <p>fa-solid fa-map-location-dot</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <!-- タイトル -->
+          <p>edaJuke(江田塾)</p>
+          <h1>python学習前に<br />知っておいた方が良い事 10選</h1>
+          <hr />
+          <br />
+          <ul>
+            <li>
+              江田がプログラミング学習を進める上で先に知っておけば良かったと思った事を厳選
+            </li>
+          </ul>
+          <p>by Occupier Advisory | Hirotaka Eda</p>
+        </section>
+        <section>
+          <!-- 拡張子 -->
+          <section>
+            <p>python学習前に知っておいた方が良い事 10選</p>
+            <h1>1. 「拡張子」について知っておこう！</h1>
+            <hr />
+            <br />
+            <ul>
+              <li>拡張子 : Filename Extension</li>
+              <li>拡張子＝ファイル形式</li>
+            </ul>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>python学習前に知っておいた方が良い事 10選 - 1.拡張子</p>
+            <h1>ファイルの種類</h1>
+            <hr />
+            <br />
+            <div class="wrapper3">
+              <div>
+                <i class="fa-solid fa-table icon"></i>
+                <p>.csv .json .txt</p>
+                <p>データファイル</p>
+              </div>
+              <div>
+                <i class="fa-brands fa-windows icon"></i>
+                <p>.docx .xlsx .pptx</p>
+                <p>Microsoft APPファイル</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-file-zipper icon"></i>
+                <p>.zip</p>
+                <p>圧縮ファイル</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-image icon"></i>
+                <p>.png .jpg .gif</p>
+                <p>画像ファイル</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-file-audio icon"></i>
+                <p>.mp3 .mp4</p>
+                <p>音楽・動画ファイル</p>
+              </div>
+              <div>
+                <i class="fa-brands fa-python icon"></i>
+                <p>.py .ipynb</p>
+                <p>python系ファイル</p>
+              </div>
+            </div>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>python学習前に知っておいた方が良い事 10選 - 1.拡張子</p>
+            <h1>ポイント</h1>
+            <hr />
+            <br />
+            <ul>
+              <li>
+                拡張子はPC/Appがファイルの種類を識別するためにファイルの名前の末尾につけられる文字列
+              </li>
+              <li>
+                「末尾につけられる文字列」は「. (ドット) +英数字3〜4文字」
+              </li>
+              <ul>
+                <li style="font-size: 1.5rem">
+                  PCでは拡張子が大文字(.CSV)でも動作するが別物として区別される環境もあるので小文字で統一するのがベスト
+                </li>
+              </ul>
+              <li>ファイル名はなるべく日本語ではなく半角英数字にする</li>
+              <li>ファイル名は記号を使わない</li>
+              <ul>
+                <li style="font-size: 1.5rem">
+                  文字を区切りたい時は「_ (アンダーバー,
+                  アンダースコア)」を使おう
+                </li>
+                <li style="font-size: 1.5rem">
+                  「- (ハイフン, マイナス)」も極力避けた方が良い
+                </li>
+              </ul>
+              <li>プログラミングでは普段使わない拡張子を多く使うようになる</li>
+              <ul>
+                <li style="font-size: 1.5rem">
+                  知らない拡張子が出てきたらどんな種類の拡張子が調べてみよう
+                </li>
+              </ul>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <!-- 命名規則 -->
+          <section>
+            <p>python学習前に知っておいた方が良い事 10選</p>
+            <h1>2. 「命名規則」を統一しよう！</h1>
+            <hr />
+            <br />
+            <ul>
+              <li>命名規則 : Naming Conventions</li>
+              <li>命名規則＝ネーミング規則, ネーミング規約</li>
+            </ul>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>python学習前に知っておいた方が良い事 10選 - 2.命名規則</p>
+            <h1>ポイント</h1>
+            <hr />
+            <br />
+            <ul>
+              <li>ファイル名・識別子, カラム名, 変数名, 関数名, 等</li>
+              <ul>
+                <li style="font-size: 1.5rem">基本的に日本語は利用しない</li>
+              </ul>
+              <li>
+                プログラミングを行う際には自由に名前を決める事が出来るものが多くある
+              </li>
+              <li>適当に名前をつけてしまうデメリット</li>
+              <ul>
+                <li style="font-size: 1.5rem">自分も他人もコードが読み辛い</li>
+                <li style="font-size: 1.5rem">
+                  リファクタリング(コードの整理)が難しくなる
+                </li>
+                <li style="font-size: 1.5rem">同じ名前を使ってしまいバグる</li>
+              </ul>
+            </ul>
+            <p></p>
+            <h3>規則性を持たせてなるべく統一する！</h3>
+            <h3>はじめは他の人のマネをしてみよう！</h3>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>python学習前に知っておいた方が良い事 10選 - 2.命名規則</p>
+            <h1>代表的な命名規則</h1>
+            <hr />
+            <br />
+            <div class="wrapper3">
+              <div>
+                <h3>snake case</h3>
+                <p>sample_test_data.csv</p>
+              </div>
+              <div>
+                <h3>camel case</h3>
+                <p>sampleTestData.csv</p>
+              </div>
+              <div>
+                <h3>kebab case</h3>
+                <p>sample-test-data.csv</p>
+              </div>
+              <div>
+                <h3>screaming snake case</h3>
+                <p>SAMPLE_TEST_DATA.csv</p>
+              </div>
+              <div>
+                <h3>upper camel case (pascal case)</h3>
+                <p>SampleTestData.csv</p>
+              </div>
+              <div>
+                <h3>train case</h3>
+                <p>Sample-Test-Data.csv</p>
+              </div>
+            </div>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>python学習前に知っておいた方が良い事 10選 - 2.命名規則</p>
+            <h1>python</h1>
+            <hr />
+            <br />
+            <div class="wrapper2">
+              <div>
+                <img
+                  src="./dist/pythonLogo.png"
+                  alt="pythonLogo"
+                  width="200px"
+                />
+                <p>python →</p>
+              </div>
+              <div>
+                <i
+                  class="fa-solid fa-staff-snake icon"
+                  style="font-size: 15rem"
+                ></i>
+                <p>snake caseを使っている人が多い</p>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <!-- ルート ディレクトリー パス -->
+          <section>
+            <p>python学習前に知っておいた方が良い事 10選</p>
+            <h1 style="font-size: 3.3em">
+              3. 「ディレクトリー, パス」を知っておこう！
+            </h1>
+            <hr />
+            <br />
+            <ul>
+              <li>ディレクトリー : Directory</li>
+              <li>パス : Path</li>
+              <li>ルート : Route</li>
+            </ul>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>
+              python学習前に知っておいた方が良い事 10選 - 3.ディレクトリー・パス
+            </p>
+            <h1>ディレクトリー・パスとは</h1>
+            <hr />
+            <br />
+            <div class="wrapper2">
+              <div>
+                <i class="fa-solid fa-folder icon"></i>
+                <p></p>
+                <h3>ディレクトリー Directory</h3>
+                <p>フォルダ</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-folder-tree icon"></i>
+                <p></p>
+                <h3>パス Path</h3>
+                <p>フォルダ・ファイルまでの経路</p>
+              </div>
+            </div>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>
+              python学習前に知っておいた方が良い事 10選 - 3.ディレクトリー・パス
+            </p>
+            <h1>絶対パス</h1>
+            <hr />
+            <br />
+            <h3>
+              絶対パス :
+              あるファイルやディレクトリーの場所を表す方法として、ファイルシステムのルート（先頭のディレクトリー）から辿って表記したパスのこと
+            </h3>
+            <div class="wrapper2">
+              <div>
+                <pre><code data-trim data-noescape>
 									Cドライブ(ルート)
 									│
 									├── dir1
@@ -257,29 +324,35 @@
 									│       ├── file4.txt
 									└── file5.txt
 								</code></pre>
-							</div>
-							<div>
-								<i class="fa-solid fa-folder-tree icon"></i>
-								<p></p>
-								<h3>file2.txtの絶対パス</h3>
-								<p>C:\dir1\dir2\file2.txt</p>
-								<p></p>
-								<ul style="font-size: 0.8em">
-									<li>( \ )バックスラッシュと( ￥ )円マークは一緒</li>
-									<li>Windows : ( \ )バックスラッシュ</li>
-									<li>Mac : ( / )スラッシュ</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 3.ディレクトリー・パス</p>
-						<h1>カレントディレクトリー</h1>
-						<hr><br>
-						<h3>カレントディレクトリー : 実行中のソフトウェアなどがファイルシステム中で現在位置として指し示しているディレクトリーのこと</h3>
-						<div class="wrapper2">
-							<div>
-								<pre><code data-trim data-noescape>
+              </div>
+              <div>
+                <i class="fa-solid fa-folder-tree icon"></i>
+                <p></p>
+                <h3>file2.txtの絶対パス</h3>
+                <p>C:\dir1\dir2\file2.txt</p>
+                <p></p>
+                <ul style="font-size: 0.8em">
+                  <li>( \ )バックスラッシュと( ￥ )円マークは一緒</li>
+                  <li>Windows : ( \ )バックスラッシュ</li>
+                  <li>Mac : ( / )スラッシュ</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>
+              python学習前に知っておいた方が良い事 10選 - 3.ディレクトリー・パス
+            </p>
+            <h1>カレントディレクトリー</h1>
+            <hr />
+            <br />
+            <h3>
+              カレントディレクトリー :
+              実行中のソフトウェアなどがファイルシステム中で現在位置として指し示しているディレクトリーのこと
+            </h3>
+            <div class="wrapper2">
+              <div>
+                <pre><code data-trim data-noescape>
 									Cドライブ(ルート)
 									│
 									├── dir1
@@ -294,24 +367,30 @@
 									│       ├── file4.txt
 									└── file5.txt
 								</code></pre>
-							</div>
-							<div>
-								<i class="fa-solid fa-folder icon"></i>
-								<p></p>
-								<h3>fuga.pyの場合</h3>
-								<p>C:\dir1\dir2\dir3</p>
-								<p>カレントディレクトリー</p>
-							</div>
-						</div>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 3.ディレクトリー・パス</p>
-						<h1>相対パス</h1>
-						<hr><br>
-						<h3>相対パス : あるファイルやディレクトリの場所を表す方法として、カレントディレクトリから辿って表記したパスのこと</h3>
-						<div class="wrapper2">
-							<div>
-								<pre><code data-trim data-noescape>
+              </div>
+              <div>
+                <i class="fa-solid fa-folder icon"></i>
+                <p></p>
+                <h3>fuga.pyの場合</h3>
+                <p>C:\dir1\dir2\dir3</p>
+                <p>カレントディレクトリー</p>
+              </div>
+            </div>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>
+              python学習前に知っておいた方が良い事 10選 - 3.ディレクトリー・パス
+            </p>
+            <h1>相対パス</h1>
+            <hr />
+            <br />
+            <h3>
+              相対パス :
+              あるファイルやディレクトリの場所を表す方法として、カレントディレクトリから辿って表記したパスのこと
+            </h3>
+            <div class="wrapper2">
+              <div>
+                <pre><code data-trim data-noescape>
 									Cドライブ(ルート)
 									│
 									├── dir1
@@ -326,24 +405,30 @@
 									│       ├── file4.txt
 									└── file5.txt
 								</code></pre>
-							</div>
-							<div>
-								<i class="fa-solid fa-folder icon"></i>
-								<p></p>
-								<h3>hoge.pyからみたfile2.txt</h3>
-								<p>.\file2.txt</p>
-								<p>「 .\ 」 : カレントディレクトリー dir2</p>
-							</div>
-						</div>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 3.ディレクトリー・パス</p>
-						<h1>相対パス</h1>
-						<hr><br>
-						<h3>相対パス : あるファイルやディレクトリの場所を表す方法として、カレントディレクトリから辿って表記したパスのこと</h3>
-						<div class="wrapper2">
-							<div>
-								<pre><code data-trim data-noescape>
+              </div>
+              <div>
+                <i class="fa-solid fa-folder icon"></i>
+                <p></p>
+                <h3>hoge.pyからみたfile2.txt</h3>
+                <p>.\file2.txt</p>
+                <p>「 .\ 」 : カレントディレクトリー dir2</p>
+              </div>
+            </div>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>
+              python学習前に知っておいた方が良い事 10選 - 3.ディレクトリー・パス
+            </p>
+            <h1>相対パス</h1>
+            <hr />
+            <br />
+            <h3>
+              相対パス :
+              あるファイルやディレクトリの場所を表す方法として、カレントディレクトリから辿って表記したパスのこと
+            </h3>
+            <div class="wrapper2">
+              <div>
+                <pre><code data-trim data-noescape>
 									Cドライブ(ルート)
 									│
 									├── dir1
@@ -358,23 +443,29 @@
 									│       ├── file4.txt
 									└── file5.txt
 								</code></pre>
-							</div>
-							<div>
-								<i class="fa-solid fa-folder icon"></i>
-								<p></p>
-								<h3>hoge.pyからみたfile3.txt</h3>
-								<p>.\dir3\file3.txt</p>
-							</div>
-						</div>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 3.ディレクトリー・パス</p>
-						<h1>相対パス</h1>
-						<hr><br>
-						<h3>相対パス : あるファイルやディレクトリの場所を表す方法として、カレントディレクトリから辿って表記したパスのこと</h3>
-						<div class="wrapper2">
-							<div>
-								<pre><code data-trim data-noescape>
+              </div>
+              <div>
+                <i class="fa-solid fa-folder icon"></i>
+                <p></p>
+                <h3>hoge.pyからみたfile3.txt</h3>
+                <p>.\dir3\file3.txt</p>
+              </div>
+            </div>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>
+              python学習前に知っておいた方が良い事 10選 - 3.ディレクトリー・パス
+            </p>
+            <h1>相対パス</h1>
+            <hr />
+            <br />
+            <h3>
+              相対パス :
+              あるファイルやディレクトリの場所を表す方法として、カレントディレクトリから辿って表記したパスのこと
+            </h3>
+            <div class="wrapper2">
+              <div>
+                <pre><code data-trim data-noescape>
 									Cドライブ(ルート)
 									│
 									├── dir1
@@ -389,24 +480,30 @@
 									│       ├── file4.txt
 									└── file5.txt
 								</code></pre>
-							</div>
-							<div>
-								<i class="fa-solid fa-folder icon"></i>
-								<p></p>
-								<h3>hoge.pyからみたfile1.txt</h3>
-								<p>..\file1.txt</p>
-								<p>1つ前の階層の場合「..\」</p>
-							</div>
-						</div>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 3.ディレクトリー・パス</p>
-						<h1>相対パス</h1>
-						<hr><br>
-						<h3>相対パス : あるファイルやディレクトリの場所を表す方法として、カレントディレクトリから辿って表記したパスのこと</h3>
-						<div class="wrapper2">
-							<div>
-								<pre><code data-trim data-noescape>
+              </div>
+              <div>
+                <i class="fa-solid fa-folder icon"></i>
+                <p></p>
+                <h3>hoge.pyからみたfile1.txt</h3>
+                <p>..\file1.txt</p>
+                <p>1つ前の階層の場合「..\」</p>
+              </div>
+            </div>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>
+              python学習前に知っておいた方が良い事 10選 - 3.ディレクトリー・パス
+            </p>
+            <h1>相対パス</h1>
+            <hr />
+            <br />
+            <h3>
+              相対パス :
+              あるファイルやディレクトリの場所を表す方法として、カレントディレクトリから辿って表記したパスのこと
+            </h3>
+            <div class="wrapper2">
+              <div>
+                <pre><code data-trim data-noescape>
 									Cドライブ(ルート)
 									│
 									├── dir1
@@ -421,468 +518,587 @@
 									│       ├── file4.txt
 									└── file5.txt
 								</code></pre>
-							</div>
-							<div>
-								<i class="fa-solid fa-folder icon"></i>
-								<p></p>
-								<h3>hoge.pyからみたfile4.txt</h3>
-								<p>..\..\dir4\file4.txt</p>
-								<p>2つ前の階層の場合「..\..\」</p>
-							</div>
-						</div>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 3.ディレクトリー・パス</p>
-						<h1>ポイント</h1>
-						<hr><br>
-						<ul>
-							<li>同じディレクトリーに同じ名前のファイルは共存出来ない</li>
-							<li>途中のファイル名が変わるとパスが変ってしまうので注意</li>
-						</ul>
-					</section>
-				</section>
-				<section> <!-- 余談 : メタ構文変数 -->
-					<section>
-						<p>python学習前に知っておいた方が良い事 10選 - 余談</p>
-						<h1>余談 メタ構文変数</h1>
-						<hr><br>
-						<h2>"hoge" "fuga"</h2>
-						<blockquote>
-							メタ構文変数 : Metasyntactic Variable<br>
-							プログラミング言語の記述で使われる識別子の一種<br>
-							サンプルプログラムなどで意味のない名前が必要な場合に利用される「意味のない名前」であることが広く知られた識別子のことである<br>
-							<cite><a href="https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%BF%E6%A7%8B%E6%96%87%E5%A4%89%E6%95%B0" target="_blank">Wikipedia</a></cite>
-						</blockquote>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 余談 メタ構文変数</p>
-						<h1>メタ構文変数の例</h1>
-						<hr><br>
-						<div class="wrapper3">
-							<div>
-								<h3>英語圏</h3>
-								<p>foo/bar/foobar/baz</p>
-							</div>
-							<div>
-								<h3>日本のみ</h3>
-								<p>hoge/fuga/piyo/hogera</p>
-							</div>
-							<div>
-								<h3>Python</h3>
-								<p>spam/ham/eggs</p>
-							</div>
-						</div>
-						<br>
-						<h3>お好みの名前をつけるのもあり！</h3>
-						<p>pika/hito/zeni/fusi 等</p>
-					</section>
-				</section>
-				<section> <!-- ショートカット 自動補完機能 -->
-					<section>
-						<p>python学習前に知っておいた方が良い事 10選</p>
-						<h1>4.ショートカットとコード補完機能はガンガン使おう！</h1>
-						<hr><br>
-						<ul>
-							<li>ショートカット : Shortcut</li>
-							<li>コード補完機能 : Code Completion Function</li>
-							<li>生産性・作業効率の向上！</li>
-						</ul>
-					</section>
-					<section data-background-color="#4b7578">
-							<p>python学習前に知っておいた方が良い事 10選 - 4.ショートカットとコード補完機能</p>
-							<h1>ショートカット</h1>
-							<hr><br>
-							<div class="wrapper2">
-								<div>
-									<i class="fa-brands fa-windows icon"></i>
-									<h3 style="margin-top: 20px;">Windowsショートカット</h3>
-									<ul>
-										<li>Ctrl + { X, C, V, Z, Y, A, N, F, ... }</li>
-										<li><i class="fa-brands fa-windows"></i> + Ctrl + { D, ←, → }</li>
-										<li><i class="fa-brands fa-windows"></i> + Tab</li>
-										<li>F2, F12, ...</li>
-										<li><i class="fa-solid fa-ellipsis-vertical"></i></li>
-									</ul>
-								</div>
-								<div>
-									<i class="fa-solid fa-icons icon"></i>
-									<h3 style="margin-top: 20px;">Appショートカット</h3>
-									<ul>
-										<li><i class="fa-brands fa-windows"></i> Word, Excel, Powerpoint, ...</li>
-										<li><i class="fa-brands fa-chrome"></i> Chrome</li>
-										<ul>
-											<li>Ctrl + { T, W, Shift + T }</li>
-											<li>Ctrl + { page up, page down }</li>
-											<li>Ctrl + L</li>
-										</ul>
-										<li><i class="fa-solid fa-ellipsis-vertical"></i></li>
-									</ul>
-								</div>
-							</div>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 4.ショートカットとコード補完機能</p>
-						<h1>コード補完機能</h1>
-						<hr><br>
-						<div class="wrapper2">
-							<div>
-								<img src="./dist/Emmet.png" alt="Emmet Image">
-								<h4>Google Colaboratory</h4>
-							</div>
-							<div>
-								<ul>
-									<li>コードを途中まで打つと利用可能なコード候補出てくる</li>
-									<li>選択すると自動でコードを完成させてくれる</li>
-									<li>タイプミスも防ぐことが出来る！</li>
-									<li>コードが早く書ける！</li>
-									<li>上級者ほどガンガン使っている</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-				</section>
-				<section> <!-- プログラミング言語 -->
-					<section>
-						<p>python学習前に知っておいた方が良い事 10選</p>
-						<h1>5.プログラミング言語について知っておこう！</h1>
-						<hr><br>
-						<ul>
-							<li>プログラミング言語には色々な種類がある</li>
-							<li>一つ言語を取得すれば他の言語も習得しやすくなる</li>
-							<li>レガシー言語、人気言語、最新言語</li>
-							<li>何百種類もあるらしい...</li>
-						</ul>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 5.プログラミング言語</p>
-						<h1>プログラミング言語 分類</h1>
-						<hr><br>
-						<div class="wrapper2">
-							<div>
-								<h3>コンパイル型言語</h3>
-								<ul>
-									<li>プログラムを実行する前に、機械が読める言語(0と1のデータ群)に翻訳する言語</li>
-									<li>プログラム実行前に翻訳を済ませておくため、プログラムの実行速度が速い</li>
-									<li>学習に苦労しやすい</li>
-									<li>Java, C言語, C++, C#, Go言語, など</li>
-								</ul>
-							</div>
-							<div>
-								<h3>インタプリタ型言語</h3>
-								<ul>
-									<li>プログラムを実行しながら、機械が読める言語に少しずつ翻訳する言語</li>
-									<li>すぐにプログラムを実行できる</li>
-									<li>学習しやすい</li>
-									<li>実行速度が遅い</li>
-									<li>PHP, JavaScript, Python, Ruby, など</li>
-								</div>
-							</ul>
-						</div>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 5.プログラミング言語</p>
-						<h1>その他の言語</h1>
-						<hr><br>
-						<div class="wrapper3">
-							<div>
-								<i class="fa-brands fa-html5 icon" style="color: rgb(237, 102, 53)"></i>
-								<h2>HTML</h2>
-								<p>HyperText Markup Language</p>
-								<p>マークアップ言語</p>
-							</div>
-							<div>
-								<i class="fa-brands fa-css3-alt icon" style="color: rgb(66, 66, 255)"></i>
-								<h2>CSS</h2>
-								<p>Cascading Style Sheets</p>
-								<p>スタイルシート言語</p>
-							</div>
-							<div>
-								<i class="fa-solid fa-database icon"></i>
-								<h2>SQL</h2>
-								<p>Structured Query Language</p>
-								<p>データベース言語</p>
-							</div>
-						</div>
-						<h3>やりたい事によってはプログラミング言語と同時に学習する必要が出てくる可能性もある</h3>
-					</section>
-				</section>
-				<section> <!-- バージョン -->
-					<section>
-						<p>python学習前に知っておいた方が良い事 10選</p>
-						<h1>6.バージョンについて知っておこう！</h1>
-						<hr><br>
-						<ul>
-							<li>ざっくり理解しておくと後で楽！</li>
-							<li>依存関係 Dependency</li>
-							<li>バージョン管理</li>
-						</ul>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 6.バージョン</p>
-						<h1>バージョンがあるもの</h1>
-						<hr><br>
-						<div class="wrapper3">
-							<div>
-								<i class="fa-solid fa-code icon"></i>
-								<p>プログラミング言語</p>
-							</div>
-							<div>
-								<i class="fa-brands fa-windows icon"></i>
-								<p>OS (Operating System)</p>
-							</div>
-							<div>
-								<i class="fa-solid fa-icons icon"></i>
-								<p>アプリケーション</p>
-							</div>
-							<div>
-								<i class="fa-solid fa-boxes-packing icon"></i>
-								<p>ライブラリー, パッケージ, <br>モジュール</p>
-							</div>
-							<div>
-								<i class="fa-solid fa-gears icon"></i>
-								<p>API</p>
-							</div>
-							<div>
-								<i class="fa-solid fa-user-gear icon"></i>
-								<p>自分が作るもの</p>
-							</div>
-						</div>
-						<h3>ほぼ全てのモノに"バージョン"があり常に新しいバージョンへ更新されていく！</h3>
-						<h3>自身で作成するモノのバージョン管理は自身で行う！</h3>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 6.バージョン</p>
-						<h1>依存関係</h1>
-						<hr><br>
-						<ul>
-							<li>あるプログラム・モジュールをビルド・実行する為に<br>別のプログラム・モジュールが必要である事を依存関係と呼ぶ</li>
-							<li>特定のバージョン以上、または以下のモノが必要な場合もある</li>
-							<li>これらの「依存関係の解決」の為に</li>
-							<ul>
-								<li>ビルドツール</li>
-								<li>パッケージ管理システム</li>
-							</ul>
-							<li>いずれ必要になる知識なので「こんなものもある」程度に知っておこう！</li>
-						</ul>
-					</section>
-				</section>
-				<section> <!-- ライブラリ パッケージ モジュール -->
-					<section>
-						<p>python学習前に知っておいた方が良い事 10選</p>
-						<h1>7.モジュール・パッケージ・ライブラリをについて知っておこう！</h1>
-						<hr><br>
-						<ul>
-							<li>モジュール : Module</li>
-							<li>パッケージ : Package</li>
-							<li>ライブラリ : Library</li>
-						</ul>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 7.モジュール・パッケージ・ライブラリ</p>
-						<h1>モジュール・パッケージ・ライブラリ</h1>
-						<hr><br>
-						<div class="wrapper3">
-							<div>
-								<i class="fa-solid fa-gears icon"></i>
-								<h3 style="margin-top: 20px;">モジュール</h3>
-								<p>関数やクラス<br>をまとめたもの</p>
-							</div>
-							<div>
-								<i class="fa-solid fa-box-archive icon"></i>
-								<h3 style="margin-top: 20px;">パッケージ</h3>
-								<p>複数のモジュール<br>をまとめたフォルダ</p>
-							</div>
-							<div>
-								<i class="fa-solid fa-boxes-packing icon"></i>
-								<h3 style="margin-top: 20px;">ライブラリ</h3>
-								<p>複数のパッケージ<br>をまとめたもの</p>
-							</div>
-						</div>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 7.モジュール・パッケージ・ライブラリ</p>
-						<h1>ライブラリの種類</h1>
-						<hr><br>
-						<div class="wrapper3">
-							<div>
-								<i class="fa-solid fa-globe icon"></i>
-								<h3 style="margin-top: 20px;">標準<br>ライブラリ</h3>
-								<p>各開発環境構築時にインストールされているもの</p>
-							</div>
-							<div>
-								<i class="fa-solid fa-users-gear icon"></i>
-								<h3 style="margin-top: 20px;">サードパーティー<br>ライブラリ</h3>
-								<p>先人達の英知と努力の結晶</p>
-							</div>
-							<div>
-								<i class="fa-solid fa-user-plus icon"></i>
-								<h3 style="margin-top: 20px;">自作<br>ライブラリ</h3>
-								<p>同じコードを様々なプロジェクトで繰り返し使用可能</p>
-							</div>
-						</div>
-						<h3>全てのコードを0から書かなくて良い！</h3>
-					</section>
-				</section>
-				<section> <!-- ググる -->
-					<section>
-						<p>python学習前に知っておいた方が良い事 10選</p>
-						<h1>8.ググるコツを抑えよう！</h1>
-						<hr><br>
-						<ul>
-							<li>プログラミングで必要な知識は99%ググれば解決する</li>
-							<li>残りの1%は手を出す必要は無い</li>
-							<li>プログラミング上級者 = ググる上級者</li>
-						</ul>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 8.ググる</p>
-						<h1>1.使用言語でググる！</h1>
-						<hr><br>
-						<h3>使用言語を頭につけてググる</h3>
-						<br>
-						<div class="searchBox">
-							<h3>python　円グラフ　色指定方法</h3>
-							<i class="fa-solid fa-magnifying-glass"></i>
-						</div>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 8.ググる</p>
-						<h1>2.エラーでググる！</h1>
-						<hr><br>
-						<h3>エラーそのままコピペしてググる</h3>
-						<br>
-						<div class="searchBox">
-							<h3>TypeError: can only concatenate str (not "int") to str</h3>
-							<i class="fa-solid fa-magnifying-glass"></i>
-						</div>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 8.ググる</p>
-						<h1>3.公式ドキュメントをググる！</h1>
-						<hr><br>
-						<h3>検索対象名 + ドキュメント, docs, documentationで検索</h3>
-						<br>
-						<div class="searchBox">
-							<h3>python documentation</h3>
-							<i class="fa-solid fa-magnifying-glass"></i>
-						</div>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 8.ググる</p>
-						<h1>4.情報共有サイトをググる！</h1>
-						<hr><br>
-						<h3>Qiita, Stack Overflow(英語)などがおすすめ</h3>
-						<br>
-						<div class="searchBox">
-							<h3>qiita python beautiful soup</h3>
-							<i class="fa-solid fa-magnifying-glass"></i>
-						</div>
-					</section>
-				</section>
-				<section><!-- 文字化け -->
-					<section>
-						<p>python学習前に知っておいた方が良い事 10選</p>
-						<h1>9.文字化けは対処可能！</h1>
-						<hr><br>
-						<ul>
-							<li>日本語の様にダブルバイト言語特有の現象</li>
-							<li>英語の様なシングルバイト圏ではこの様な現象が起きないので<br>Mojibakeというという言葉がそのまま通用する</li>
-							<li>日本語データを扱っている人は皆直面している問題なので<br>必ず解決策が見つかる</li>
-						</ul>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 9.文字化け</p>
-						<h1>csvをエクセルで開くと<br>たまにこうなる理由</h1>
-						<hr><br>
-						<div class="wrapper2">
-							<div>
-								<img src="./dist/Mojibake.png" height="300px">
-							</div>
-							<div>
-								<ul>
-									<li>csvファイルの文字コード : UTF-8<br>(Unicodeの符号を8ビット単位で表す)</li>
-									<li>エクセルのデフォルトのエンコーディング方式 : SHIFT_JIS</li>
-									<li>文字コードが一致しない為Mojibakeが起きる</li>
-									<li>エンコーディング(encoding) : データを一定の規則に従って目的の情報に変換すること</li>
-									<li>エクセルでもエンコーディング方式をUTF-8に指定して読み込みを行えば文字化けしない</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 9.文字化け</p>
-						<h1>ポイント</h1>
-						<hr><br>
-						<ul>
-							<li>読み込みたいデータが保存されている文字コードを把握する</li>
-							<li>同じ文字コードでエンコーディングして取り扱う</li>
-							<li>システム・プログラムによって特定の文字コードで無いと文字化けしてしまうモノもある</li>
-							<li>文字化けして困ったらググってみよう！</li>
-							<li>世界中で最もよく使われている文字コード : Unicode(UTF-8)</li>
-						</ul>
-						<h2 style="margin-top: 20px;">データの保存等はなるべくUTF-8で行う方が良い！</h2>
-					</section>
-				</section>
-				<section> <!-- ある程度理解 -->
-					<section>
-						<p>python学習前に知っておいた方が良い事 10選</p>
-						<h1>10.「ある程度」理解しよう！</h1>
-						<hr><br>
-						<ul>
-							<li>言語, モジュール, API, 技術, 等は常に凄い速度で進化している</li>
-							<li>時間をかけて学習した内容も数年で新しいモノに置き換わって行く可能性がある</li>
-							<li>プロのプログラマー・エンジニアでも全てを理解している訳では無い</li>
-							<li>本当に基礎的な事以外はある程度理解して先に進もう！</li>
-						</ul>
-					</section>
-					<section data-background-color="#4b7578">
-						<p>python学習前に知っておいた方が良い事 10選 - 10.「ある程度」理解しよう</p>
-						<h1>例えばこんな事</h1>
-						<hr><br>
-						<div class="wrapper2">
-							<div>
-								<i class="fa-solid fa-laptop icon"></i>
-								<h2 style="margin-top: 10px;">GUIとCUI</h2>
-								<ul>
-									<li>2つのPC操作方法</li>
-									<li>GUI : Graphical User Interface</li>
-									<li>CUI : Character-based User Interface</li>
-								</ul>
-							</div>
-							<div>
-								<i class="fa-solid fa-globe icon"></i>
-								<h2 style="margin-top: 10px;">ITにおける「環境」</h2>
-								<ul>
-									<li>環境構築</li>
-									<li>開発環境・実行環境</li>
-									<li>ローカル環境・仮想環境</li>
-									<li>サーバー環境</li>
-								</ul>
-							</div>
-						</div>
-						<h2 style="margin-top: 10px;">こんなモノがあるんだ = 「ある程度」</h2>
+              </div>
+              <div>
+                <i class="fa-solid fa-folder icon"></i>
+                <p></p>
+                <h3>hoge.pyからみたfile4.txt</h3>
+                <p>..\..\dir4\file4.txt</p>
+                <p>2つ前の階層の場合「..\..\」</p>
+              </div>
+            </div>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>
+              python学習前に知っておいた方が良い事 10選 - 3.ディレクトリー・パス
+            </p>
+            <h1>ポイント</h1>
+            <hr />
+            <br />
+            <ul>
+              <li>同じディレクトリーに同じ名前のファイルは共存出来ない</li>
+              <li>途中のファイル名が変わるとパスが変ってしまうので注意</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <!-- 余談 : メタ構文変数 -->
+          <section>
+            <p>python学習前に知っておいた方が良い事 10選 - 余談</p>
+            <h1>余談 メタ構文変数</h1>
+            <hr />
+            <br />
+            <h2>"hoge" "fuga"</h2>
+            <blockquote>
+              メタ構文変数 : Metasyntactic Variable<br />
+              プログラミング言語の記述で使われる識別子の一種<br />
+              サンプルプログラムなどで意味のない名前が必要な場合に利用される「意味のない名前」であることが広く知られた識別子のことである<br />
+              <cite
+                ><a
+                  href="https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%BF%E6%A7%8B%E6%96%87%E5%A4%89%E6%95%B0"
+                  target="_blank"
+                  >Wikipedia</a
+                ></cite
+              >
+            </blockquote>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>python学習前に知っておいた方が良い事 10選 - 余談 メタ構文変数</p>
+            <h1>メタ構文変数の例</h1>
+            <hr />
+            <br />
+            <div class="wrapper3">
+              <div>
+                <h3>英語圏</h3>
+                <p>foo/bar/foobar/baz</p>
+              </div>
+              <div>
+                <h3>日本のみ</h3>
+                <p>hoge/fuga/piyo/hogera</p>
+              </div>
+              <div>
+                <h3>Python</h3>
+                <p>spam/ham/eggs</p>
+              </div>
+            </div>
+            <br />
+            <h3>お好みの名前をつけるのもあり！</h3>
+            <p>pika/hito/zeni/fusi 等</p>
+          </section>
+        </section>
+        <section>
+          <!-- ショートカット 自動補完機能 -->
+          <section>
+            <p>python学習前に知っておいた方が良い事 10選</p>
+            <h1>4.ショートカットとコード補完機能はガンガン使おう！</h1>
+            <hr />
+            <br />
+            <ul>
+              <li>ショートカット : Shortcut</li>
+              <li>コード補完機能 : Code Completion Function</li>
+              <li>生産性・作業効率の向上！</li>
+            </ul>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>
+              python学習前に知っておいた方が良い事 10選 -
+              4.ショートカットとコード補完機能
+            </p>
+            <h1>ショートカット</h1>
+            <hr />
+            <br />
+            <div class="wrapper2">
+              <div>
+                <i class="fa-brands fa-windows icon"></i>
+                <h3 style="margin-top: 20px">Windowsショートカット</h3>
+                <ul>
+                  <li>Ctrl + { X, C, V, Z, Y, A, N, F, ... }</li>
+                  <li>
+                    <i class="fa-brands fa-windows"></i> + Ctrl + { D, ←, → }
+                  </li>
+                  <li><i class="fa-brands fa-windows"></i> + Tab</li>
+                  <li>F2, F12, ...</li>
+                  <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                </ul>
+              </div>
+              <div>
+                <i class="fa-solid fa-icons icon"></i>
+                <h3 style="margin-top: 20px">Appショートカット</h3>
+                <ul>
+                  <li>
+                    <i class="fa-brands fa-windows"></i> Word, Excel,
+                    Powerpoint, ...
+                  </li>
+                  <li><i class="fa-brands fa-chrome"></i> Chrome</li>
+                  <ul>
+                    <li>Ctrl + { T, W, Shift + T }</li>
+                    <li>Ctrl + { page up, page down }</li>
+                    <li>Ctrl + L</li>
+                  </ul>
+                  <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>
+              python学習前に知っておいた方が良い事 10選 -
+              4.ショートカットとコード補完機能
+            </p>
+            <h1>コード補完機能</h1>
+            <hr />
+            <br />
+            <div class="wrapper2">
+              <div>
+                <img src="./dist/Emmet.png" alt="Emmet Image" />
+                <h4>Google Colaboratory</h4>
+              </div>
+              <div>
+                <ul>
+                  <li>コードを途中まで打つと利用可能なコード候補出てくる</li>
+                  <li>選択すると自動でコードを完成させてくれる</li>
+                  <li>タイプミスも防ぐことが出来る！</li>
+                  <li>コードが早く書ける！</li>
+                  <li>上級者ほどガンガン使っている</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <!-- プログラミング言語 -->
+          <section>
+            <p>python学習前に知っておいた方が良い事 10選</p>
+            <h1>5.プログラミング言語について知っておこう！</h1>
+            <hr />
+            <br />
+            <ul>
+              <li>プログラミング言語には色々な種類がある</li>
+              <li>一つ言語を取得すれば他の言語も習得しやすくなる</li>
+              <li>レガシー言語、人気言語、最新言語</li>
+              <li>何百種類もあるらしい...</li>
+            </ul>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>
+              python学習前に知っておいた方が良い事 10選 - 5.プログラミング言語
+            </p>
+            <h1>プログラミング言語 分類</h1>
+            <hr />
+            <br />
+            <div class="wrapper2">
+              <div>
+                <h3>コンパイル型言語</h3>
+                <ul>
+                  <li>
+                    プログラムを実行する前に、機械が読める言語(0と1のデータ群)に翻訳する言語
+                  </li>
+                  <li>
+                    プログラム実行前に翻訳を済ませておくため、プログラムの実行速度が速い
+                  </li>
+                  <li>学習に苦労しやすい</li>
+                  <li>Java, C言語, C++, C#, Go言語, など</li>
+                </ul>
+              </div>
+              <div>
+                <h3>インタプリタ型言語</h3>
+                <ul>
+                  <li>
+                    プログラムを実行しながら、機械が読める言語に少しずつ翻訳する言語
+                  </li>
+                  <li>すぐにプログラムを実行できる</li>
+                  <li>学習しやすい</li>
+                  <li>実行速度が遅い</li>
+                  <li>PHP, JavaScript, Python, Ruby, など</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>
+              python学習前に知っておいた方が良い事 10選 - 5.プログラミング言語
+            </p>
+            <h1>その他の言語</h1>
+            <hr />
+            <br />
+            <div class="wrapper3">
+              <div>
+                <i
+                  class="fa-brands fa-html5 icon"
+                  style="color: rgb(237, 102, 53)"
+                ></i>
+                <h2>HTML</h2>
+                <p>HyperText Markup Language</p>
+                <p>マークアップ言語</p>
+              </div>
+              <div>
+                <i
+                  class="fa-brands fa-css3-alt icon"
+                  style="color: rgb(66, 66, 255)"
+                ></i>
+                <h2>CSS</h2>
+                <p>Cascading Style Sheets</p>
+                <p>スタイルシート言語</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-database icon"></i>
+                <h2>SQL</h2>
+                <p>Structured Query Language</p>
+                <p>データベース言語</p>
+              </div>
+            </div>
+            <h3>
+              やりたい事によってはプログラミング言語と同時に学習する必要が出てくる可能性もある
+            </h3>
+          </section>
+        </section>
+        <section>
+          <!-- バージョン -->
+          <section>
+            <p>python学習前に知っておいた方が良い事 10選</p>
+            <h1>6.バージョンについて知っておこう！</h1>
+            <hr />
+            <br />
+            <ul>
+              <li>ざっくり理解しておくと後で楽！</li>
+              <li>依存関係 Dependency</li>
+              <li>バージョン管理</li>
+            </ul>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>python学習前に知っておいた方が良い事 10選 - 6.バージョン</p>
+            <h1>バージョンがあるもの</h1>
+            <hr />
+            <br />
+            <div class="wrapper3">
+              <div>
+                <i class="fa-solid fa-code icon"></i>
+                <p>プログラミング言語</p>
+              </div>
+              <div>
+                <i class="fa-brands fa-windows icon"></i>
+                <p>OS (Operating System)</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-icons icon"></i>
+                <p>アプリケーション</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-boxes-packing icon"></i>
+                <p>ライブラリー, パッケージ, <br />モジュール</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-gears icon"></i>
+                <p>API</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-user-gear icon"></i>
+                <p>自分が作るもの</p>
+              </div>
+            </div>
+            <h3>
+              ほぼ全てのモノに"バージョン"があり常に新しいバージョンへ更新されていく！
+            </h3>
+            <h3>自身で作成するモノのバージョン管理は自身で行う！</h3>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>python学習前に知っておいた方が良い事 10選 - 6.バージョン</p>
+            <h1>依存関係</h1>
+            <hr />
+            <br />
+            <ul>
+              <li>
+                あるプログラム・モジュールをビルド・実行する為に<br />別のプログラム・モジュールが必要である事を依存関係と呼ぶ
+              </li>
+              <li>特定のバージョン以上、または以下のモノが必要な場合もある</li>
+              <li>これらの「依存関係の解決」の為に</li>
+              <ul>
+                <li>ビルドツール</li>
+                <li>パッケージ管理システム</li>
+              </ul>
+              <li>
+                いずれ必要になる知識なので「こんなものもある」程度に知っておこう！
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <!-- ライブラリ パッケージ モジュール -->
+          <section>
+            <p>python学習前に知っておいた方が良い事 10選</p>
+            <h1>
+              7.モジュール・パッケージ・ライブラリをについて知っておこう！
+            </h1>
+            <hr />
+            <br />
+            <ul>
+              <li>モジュール : Module</li>
+              <li>パッケージ : Package</li>
+              <li>ライブラリ : Library</li>
+            </ul>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>
+              python学習前に知っておいた方が良い事 10選 -
+              7.モジュール・パッケージ・ライブラリ
+            </p>
+            <h1>モジュール・パッケージ・ライブラリ</h1>
+            <hr />
+            <br />
+            <div class="wrapper3">
+              <div>
+                <i class="fa-solid fa-gears icon"></i>
+                <h3 style="margin-top: 20px">モジュール</h3>
+                <p>関数やクラス<br />をまとめたもの</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-box-archive icon"></i>
+                <h3 style="margin-top: 20px">パッケージ</h3>
+                <p>複数のモジュール<br />をまとめたフォルダ</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-boxes-packing icon"></i>
+                <h3 style="margin-top: 20px">ライブラリ</h3>
+                <p>複数のパッケージ<br />をまとめたもの</p>
+              </div>
+            </div>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>
+              python学習前に知っておいた方が良い事 10選 -
+              7.モジュール・パッケージ・ライブラリ
+            </p>
+            <h1>ライブラリの種類</h1>
+            <hr />
+            <br />
+            <div class="wrapper3">
+              <div>
+                <i class="fa-solid fa-globe icon"></i>
+                <h3 style="margin-top: 20px">標準<br />ライブラリ</h3>
+                <p>各開発環境構築時にインストールされているもの</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-users-gear icon"></i>
+                <h3 style="margin-top: 20px">
+                  サードパーティー<br />ライブラリ
+                </h3>
+                <p>先人達の英知と努力の結晶</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-user-plus icon"></i>
+                <h3 style="margin-top: 20px">自作<br />ライブラリ</h3>
+                <p>同じコードを様々なプロジェクトで繰り返し使用可能</p>
+              </div>
+            </div>
+            <h3>全てのコードを0から書かなくて良い！</h3>
+          </section>
+        </section>
+        <section>
+          <!-- ググる -->
+          <section>
+            <p>python学習前に知っておいた方が良い事 10選</p>
+            <h1>8.ググるコツを抑えよう！</h1>
+            <hr />
+            <br />
+            <ul>
+              <li>プログラミングで必要な知識は99%ググれば解決する</li>
+              <li>残りの1%は手を出す必要は無い</li>
+              <li>プログラミング上級者 = ググる上級者</li>
+            </ul>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>python学習前に知っておいた方が良い事 10選 - 8.ググる</p>
+            <h1>1.使用言語でググる！</h1>
+            <hr />
+            <br />
+            <h3>使用言語を頭につけてググる</h3>
+            <br />
+            <div class="searchBox">
+              <h3>python　円グラフ　色指定方法</h3>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>python学習前に知っておいた方が良い事 10選 - 8.ググる</p>
+            <h1>2.エラーでググる！</h1>
+            <hr />
+            <br />
+            <h3>エラーそのままコピペしてググる</h3>
+            <br />
+            <div class="searchBox">
+              <h3>TypeError: can only concatenate str (not "int") to str</h3>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>python学習前に知っておいた方が良い事 10選 - 8.ググる</p>
+            <h1>3.公式ドキュメントをググる！</h1>
+            <hr />
+            <br />
+            <h3>検索対象名 + ドキュメント, docs, documentationで検索</h3>
+            <br />
+            <div class="searchBox">
+              <h3>python documentation</h3>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>python学習前に知っておいた方が良い事 10選 - 8.ググる</p>
+            <h1>4.情報共有サイトをググる！</h1>
+            <hr />
+            <br />
+            <h3>Qiita, Stack Overflow(英語)などがおすすめ</h3>
+            <br />
+            <div class="searchBox">
+              <h3>qiita python beautiful soup</h3>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </section>
+        </section>
+        <section>
+          <!-- 文字化け -->
+          <section>
+            <p>python学習前に知っておいた方が良い事 10選</p>
+            <h1>9.文字化けは対処可能！</h1>
+            <hr />
+            <br />
+            <ul>
+              <li>日本語の様にダブルバイト言語特有の現象</li>
+              <li>
+                英語の様なシングルバイト圏ではこの様な現象が起きないので<br />Mojibakeというという言葉がそのまま通用する
+              </li>
+              <li>
+                日本語データを扱っている人は皆直面している問題なので<br />必ず解決策が見つかる
+              </li>
+            </ul>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>python学習前に知っておいた方が良い事 10選 - 9.文字化け</p>
+            <h1>csvをエクセルで開くと<br />たまにこうなる理由</h1>
+            <hr />
+            <br />
+            <div class="wrapper2">
+              <div>
+                <img src="./dist/Mojibake.png" height="300px" />
+              </div>
+              <div>
+                <ul>
+                  <li>
+                    csvファイルの文字コード : UTF-8<br />(Unicodeの符号を8ビット単位で表す)
+                  </li>
+                  <li>
+                    エクセルのデフォルトのエンコーディング方式 : SHIFT_JIS
+                  </li>
+                  <li>文字コードが一致しない為Mojibakeが起きる</li>
+                  <li>
+                    エンコーディング(encoding) :
+                    データを一定の規則に従って目的の情報に変換すること
+                  </li>
+                  <li>
+                    エクセルでもエンコーディング方式をUTF-8に指定して読み込みを行えば文字化けしない
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>python学習前に知っておいた方が良い事 10選 - 9.文字化け</p>
+            <h1>ポイント</h1>
+            <hr />
+            <br />
+            <ul>
+              <li>読み込みたいデータが保存されている文字コードを把握する</li>
+              <li>同じ文字コードでエンコーディングして取り扱う</li>
+              <li>
+                システム・プログラムによって特定の文字コードで無いと文字化けしてしまうモノもある
+              </li>
+              <li>文字化けして困ったらググってみよう！</li>
+              <li>世界中で最もよく使われている文字コード : Unicode(UTF-8)</li>
+            </ul>
+            <h2 style="margin-top: 20px">
+              データの保存等はなるべくUTF-8で行う方が良い！
+            </h2>
+          </section>
+        </section>
+        <section>
+          <!-- ある程度理解 -->
+          <section>
+            <p>python学習前に知っておいた方が良い事 10選</p>
+            <h1>10.「ある程度」理解しよう！</h1>
+            <hr />
+            <br />
+            <ul>
+              <li>
+                言語, モジュール, API, 技術, 等は常に凄い速度で進化している
+              </li>
+              <li>
+                時間をかけて学習した内容も数年で新しいモノに置き換わって行く可能性がある
+              </li>
+              <li>
+                プロのプログラマー・エンジニアでも全てを理解している訳では無い
+              </li>
+              <li>本当に基礎的な事以外はある程度理解して先に進もう！</li>
+            </ul>
+          </section>
+          <section data-background-color="#4b7578">
+            <p>
+              python学習前に知っておいた方が良い事 10選 -
+              10.「ある程度」理解しよう
+            </p>
+            <h1>例えばこんな事</h1>
+            <hr />
+            <br />
+            <div class="wrapper2">
+              <div>
+                <i class="fa-solid fa-laptop icon"></i>
+                <h2 style="margin-top: 10px">GUIとCUI</h2>
+                <ul>
+                  <li>2つのPC操作方法</li>
+                  <li>GUI : Graphical User Interface</li>
+                  <li>CUI : Character-based User Interface</li>
+                </ul>
+              </div>
+              <div>
+                <i class="fa-solid fa-globe icon"></i>
+                <h2 style="margin-top: 10px">ITにおける「環境」</h2>
+                <ul>
+                  <li>環境構築</li>
+                  <li>開発環境・実行環境</li>
+                  <li>ローカル環境・仮想環境</li>
+                  <li>サーバー環境</li>
+                </ul>
+              </div>
+            </div>
+            <h2 style="margin-top: 10px">
+              こんなモノがあるんだ = 「ある程度」
+            </h2>
+          </section>
+        </section>
+      </div>
+    </div>
 
-					</section>
-				</section>
-			</div>
-		</div>
-
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script src="plugin/search/search.js"></script>
-		<script src="plugin/menu/menu.js"></script>
-		<script>
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				center: true,
-				hash: true,
-				width: 1200,
-  				height: 675,
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealSearch, RevealMenu, ]
-			});
-		</script>
-	</body>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/menu/menu.js"></script>
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        width: 1200,
+        height: 675,
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealSearch,
+          RevealMenu,
+        ],
+      });
+    </script>
+  </body>
 </html>
